@@ -1,3 +1,4 @@
+/* BACKGROUND */
 body {
 margin:0;
 font-family:Poppins, sans-serif;
@@ -6,17 +7,18 @@ display:flex;
 justify-content:center;
 align-items:center;
 
-background: linear-gradient(135deg,#667eea,#764ba2,#ff758c);
-background-size:300% 300%;
-animation:bg 10s infinite;
+background: linear-gradient(-45deg, #ff6a00, #ee0979, #00c6ff, #0072ff);
+background-size: 400% 400%;
+animation: gradientMove 8s ease infinite;
 }
 
-@keyframes bg {
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+@keyframes gradientMove {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
 }
 
+/* CARD */
 .card {
 background:rgba(255,255,255,0.15);
 backdrop-filter:blur(15px);
@@ -28,7 +30,7 @@ box-shadow:0 8px 32px rgba(0,0,0,0.3);
 color:white;
 }
 
-/* LABELS */
+/* INPUT */
 .input-group {
 text-align:left;
 margin-bottom:10px;
@@ -38,10 +40,8 @@ margin-bottom:10px;
 font-size:12px;
 color:#ddd;
 margin-left:5px;
-letter-spacing:1px;
 }
 
-/* INPUT BOX */
 .input-box {
 display:flex;
 align-items:center;
@@ -87,13 +87,8 @@ font-size:18px;
 font-weight:bold;
 }
 
-.safe {
-color:#00ffcc;
-}
-
-.risky {
-color:#ff4d4d;
-}
+.safe { color:#00ffcc; }
+.risky { color:#ff4d4d; }
 
 /* LOADER */
 .loader {
