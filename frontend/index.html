@@ -5,51 +5,44 @@
 <title>Loan Risk Predictor</title>
 
 <link rel="stylesheet" href="style.css">
-
-<!-- Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
 </head>
+
 <body>
 
-<div class="container">
 <div class="card">
 
 <h2>💳 Loan Risk Predictor</h2>
 
-<!-- AGE -->
 <div class="input-group">
 <label>Age</label>
 <div class="input-box">
 <i class="fa fa-user"></i>
-<input id="age" type="number" placeholder="e.g. 25">
+<input id="age" type="number" placeholder="Example: 22">
 </div>
 </div>
 
-<!-- INCOME -->
 <div class="input-group">
 <label>Income</label>
 <div class="input-box">
 <i class="fa fa-dollar-sign"></i>
-<input id="income" type="number" placeholder="e.g. 50000">
+<input id="income" type="number" placeholder="Example: 20000">
 </div>
 </div>
 
-<!-- LOAN -->
 <div class="input-group">
 <label>Loan Amount</label>
 <div class="input-box">
 <i class="fa fa-money-bill"></i>
-<input id="loan" type="number" placeholder="e.g. 20000">
+<input id="loan" type="number" placeholder="Example: 40000">
 </div>
 </div>
 
-<!-- SCORE -->
 <div class="input-group">
 <label>Credit Score</label>
 <div class="input-box">
 <i class="fa fa-chart-line"></i>
-<input id="score" type="number" placeholder="e.g. 700">
+<input id="score" type="number" placeholder="Example: 750">
 </div>
 </div>
 
@@ -58,10 +51,11 @@
 <p id="result"></p>
 
 </div>
-</div>
 
-<!-- Sound -->
-<audio id="clickSound" src="click.mp3"></audio>
+<!-- 🔊 ALARM -->
+<audio id="alarm">
+<source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg">
+</audio>
 
 <script src="script.js"></script>
 
